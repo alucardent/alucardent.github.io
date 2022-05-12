@@ -1,3 +1,31 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Choose who decide</title>
+        <link rel="stylesheet" type="text/css" href="mail.css"/>
+        <script type="text/javascript" src="mail.js"></script>
+        
+    </head>
+    <body>
+        <header>
+            <h1>Who will decide our activities?</h1>
+        </header>
+        <main class="container">
+            <button onclick="buttonClick()" type='button'>Click me</button>
+            <br>
+            <h2 id="thisName"></h2>
+            <script>
+                let whichName = ['Lydia', 'Trixie', 'Jacob'];
+                const buttonClick = () =>{
+                    
+                    document.getElementById('thisName').innerHTML = whichName[Math.floor(Math.random()*3)]
+                }
+            </script>
+        </main>
+    </body>
+</html>
+
+<!--
 <html>
  
 <body>
@@ -6,4 +34,4 @@
   <img src="https://content.codecademy.com/articles/github-pages-via-web-app/happy-ice-cream.gif" />
 </body>
  
-</html>
+</html> -->
